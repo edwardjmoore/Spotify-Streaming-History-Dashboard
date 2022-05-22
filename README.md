@@ -1,5 +1,5 @@
 # Spotify Streaming History Dashboard
-### References
+### Documentation / Resources
 -  [spotipy](https://spotipy.readthedocs.io/en/2.19.0/#examples)
 -  [Spotify authorization scopes for Web API](https://developer.spotify.com/documentation/general/guides/authorization/scopes/)
 -  [Spotify personal data overview](https://support.spotify.com/us/article/understanding-my-data/)
