@@ -4,7 +4,7 @@ The main objective of this project, tackled in the first part of the dashboard, 
 - From Spotify's persepctive, this would be valuable information that could help provide better song/playlist reccommendations by being able to predict the user's mood based on the month/day/hour/etc. 
 - From an advertising perspective, the insights could help the advertiser choose more receptive ads by predicting the user's mood. 
 - From a personal persepctive, it could serve as informative insights that could compliment the annual Spotify Wrapped. Since I am interested in seeing different information represented in my Spotify Wrapped, the goal of the second part of the dashboard is to provide a visual to represent your mood through music for the year, as well as a visual to represent how much you appreciate your top artist for the year. 
-
+***
 ### Data Acquisition
 **Part 1 - Personal Data**<br>
 Your personal streaming data must be requested through your Spotify account. Instructions can be found [here](https://support.spotify.com/us/article/data-rights-and-privacy-settings/). A few days after requesting my personal data, Spotify sent me a folder containing severeal json files containing my streaming habits. Once obtained, I combined my streaming history json files into one Pandas dataframe:
@@ -108,6 +108,7 @@ df['valence'] = valence
 df['tempo'] = tempo
 df['duration_ms'] = duration_ms
 ```
+***
 ### Data Cleaning
 
 ### Data Visualization
