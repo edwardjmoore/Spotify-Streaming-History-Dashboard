@@ -1,4 +1,7 @@
 # Spotify Streaming History Dashboard
+### How To View Dashboard
+To view the interactive dashboard, download the "Part-3_Dashboard" notebook and open in JupyterLab, along with the "StreamingHistory_Final.csv" file located in the dataframes folder.
+
 ### Objective
 The main objective of this project, tackled in the first part of the dashboard, is to visually explore your mood is reflected in your music streaming habits over the course of a year. 
 - From Spotify's persepctive, this would be valuable information that could help provide better song/playlist reccommendations by being able to predict the user's mood based on the month/day/hour/etc. 
