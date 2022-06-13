@@ -133,6 +133,8 @@ The interactive dashboard layout was created using Dash core and html components
 - All audio features compared side by side - with dropdown to select the time interval you wish to explore (by day or by session)
 - Audio feature mapped out over time interval - with dropdowns to select specific audio feature and time interval (all days or all sessions)
 - Visual representation of how much you listened to your top artist over the year - with dropdown to select time interval (per day or per session)
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/dashboard_part_1.png?raw=true)
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/dashboard_part_2.png?raw=true)
 ***
 ### Results
 
