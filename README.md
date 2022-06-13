@@ -110,9 +110,31 @@ df['duration_ms'] = duration_ms
 ```
 ***
 ### Data Cleaning
+Some data cleaning was done before acquiring the URI for each track. This includes:
+- Dropping entries with unknown artist or unknown track
+- Removing songs with 0ms listening time
+- Removing extra days (we want exactly one year)
 
+After acquiring the URI for each track and before acquiring the audio features for each track, the following updates were made to the dataframe:
+- Removing entries with no URI
+- Adding a startTime column by subtracting msPlayed from the endTime
+- Adding a listeningSession columnm by defining a new streaming session as starting at least one hour after the end of the previous song)
+- Adding day number, month, day of week, and hour of day columns in order to visualize data based on different time intervals
+
+After acquiring the audio features for each track, the following updates were made:
+- Removing rows where audio features weren't found
+- Normalizing audio features that do not already range from 0 to 1
+
+Finally, new dataframes with the specific requirements for the individual visualizations were created by grouping and modifying the master dataframe. The dataframes created include average audio features grouped by day number (1-365), by streaming session (1-1000), by month (Jan-Dec), by day of week (Mon-Sun), and by hour of day (0-24), as well as top artist streaming data grouped by day number and by streaming session. 
+***
 ### Data Visualization
-
+The interactive dashboard layout was created using Dash core and html components and then populated with Plotly graphs. The dashboard allows you to view the following visualizations:
+- Streaming habits by month, day of week, and hour of day - with dropdown to select the audio feature you wish to explore for each graph
+- All audio features compared side by side - with dropdown to select the time interval you wish to explore (by day or by session)
+- Audio feature mapped out over time interval - with dropdowns to select specific audio feature and time interval (all days or all sessions)
+- Visual representation of how much you listened to your top artist over the year - with dropdown to select time interval (per day or per session)
+***
+### Results
 
 
 ### Documentation / Resources
