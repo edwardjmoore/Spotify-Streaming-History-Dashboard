@@ -133,12 +133,54 @@ The interactive dashboard layout was created using Dash core and html components
 - All audio features compared side by side - with dropdown to select the time interval you wish to explore (by day or by session)
 - Audio feature mapped out over time interval - with dropdowns to select specific audio feature and time interval (all days or all sessions)
 - Visual representation of how much you listened to your top artist over the year - with dropdown to select time interval (per day or per session)
+
 ![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/dashboard_part_1.png?raw=true)
 ![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/dashboard_part_2.png?raw=true)
 ***
 ### Results
+**Part 1: Streaming Habits Insights**
+Streaming Habits by Month:
+- January was the month with the most streaming time while June was the month with the least.
+- By looking at how the various audio features are distributed over the months we can conclude that January was when the slowest/saddest/least energetic music was played, while June was when the fastest/happiest/most energetic music was played.
+- The winter months have similar streaming habits as January, while the summer months have similar streaming habits as June. The spring and fall months are somewhere in between.
+- Based on these insights, Spotify could recommend music for the current month that has similar audio features as the historical values for the specified month. From an advertising perspective, I could be presented with different ads based on the month and my mood as predicted my streaming habits. From a personal perspective, I could actively listen to happier music in the winter months, knowing that historically, I have listened to slower music in the winter. 
 
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/streaming_habits_month.png?raw=true)
 
+Streaming Habits by Day of Week:
+- In general, I listened to more music on weekdays than weekends. 
+- I streamed faster/happier/more energetic music on Fridays, Saturdays, and Sundays and slower/sadder/less energetic music on Mondays and Tuesdays. Wednesdays and Thursdays lied somewhere in the middle. 
+- Based on these insights, Spotify could recommend music for the current day of the week that has similar audio features as the historical values for that day. From an advertising perspective, I could be presented with different ads based on the day of week and my mood as predicted my streaming habits. From a personal perspective, I could listen to more upbeat music on Mondays and Tuesdays, knowing that I tend to be in a less energetic mood on those days.
+
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/streaming_habits_day.png?raw=true)
+
+Streaming Habits by Hour of Day:
+- I listened to much less music from 6am to 1pm than the rest of the day. 
+- Based on my hourly listening habits, my mood is more uplifting from 2pm to 1am. After 1am and before 2pm, I tend to listen to slower, more acoustic music. 
+
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/streaming_habits_hour.png?raw=true)
+
+Audio Features per Day and per Streaming Session Over Previous Year:
+- Comparing the audio features grouped by day and by streaming session, we can see that grouping by streaming session results in a more dynamic range within each audio features. I believe this proves that analyzing the audio features by streaming session is more effective than anlyzing by day. A single streaming session is more likely to have a smaller range for each audio feature, resulting in more accurate grouping. When viewing the plot grouped by day, the audio features' ranges are "smoother", likely because one day could have many streaming sessions, each with vastly different audio features.
+- The audio features that appear more monochromatic tell us that the music I listen to tends to have a smaller range of acceptable values for that feature. For example, if a song has an instrumentalness of >0.4, I would probably skip it. The features that have a more diverse range of colours show us that I have a wider range of acceptable values for that feature. For example, the acousticness of a song would not be a good predictor as to whether or not I would skip the song since I tend to listen to songs with a wide range of acousticness. 
+
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/audio_features_day.png?raw=true) ![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/audio_features_session.png?raw=true)
+
+**Part 2: Personalized Visualizations**
+The purpose of this section is to provide unique, personalized visualizations of your streaming history for the past year. Think of the following visuals as unique representations of your streaming habits that could be provided in something like Spotify Wrapped. 
+
+Streaming Time vs. Audio Feature:
+- This graph allows you to choose an audio feature and see how it is represented in your streaming habits over the past year. You can also choose to view each bar as a listening session, instead of a day, to get a more accurate representation of your changing mood.
+
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/mood_day.png?raw=true)
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/mood_session.png?raw=true)
+
+Top Artist Appreciation:
+- This graph shows you how much you love your top artist. You can view by day or by streaming session. Each circle represents a day or a streaming session. An orange cirlce means you listened to your favourite artist that day or session. A blue circle means you did not listen to your favourite artist that day or session. 
+
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/artist_day.png?raw=true)
+![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/artist_session.png?raw=true)
+***
 ### Documentation / Resources
 -  [spotipy](https://spotipy.readthedocs.io/en/2.19.0/#examples)
 -  [Spotify authorization scopes for Web API](https://developer.spotify.com/documentation/general/guides/authorization/scopes/)
