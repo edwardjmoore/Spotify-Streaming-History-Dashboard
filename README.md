@@ -139,6 +139,7 @@ The interactive dashboard layout was created using Dash core and html components
 ***
 ### Results
 **Part 1: Streaming Habits Insights**
+
 Streaming Habits by Month:
 - January was the month with the most streaming time while June was the month with the least.
 - By looking at how the various audio features are distributed over the months we can conclude that January was when the slowest/saddest/least energetic music was played, while June was when the fastest/happiest/most energetic music was played.
@@ -167,6 +168,7 @@ Audio Features per Day and per Streaming Session Over Previous Year:
 ![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/audio_features_day.png?raw=true) ![alt text](https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/audio_features_session.png?raw=true)
 
 **Part 2: Personalized Visualizations**
+
 The purpose of this section is to provide unique, personalized visualizations of your streaming history for the past year. Think of the following visuals as unique representations of your streaming habits that could be provided in something like Spotify Wrapped. 
 
 Streaming Time vs. Audio Feature:
