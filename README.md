@@ -1,12 +1,17 @@
 # Spotify Streaming History Dashboard
-### How To View Dashboard
-To view the interactive dashboard, download the "Part-3_Dashboard" notebook and open in JupyterLab, along with the "StreamingHistory_Final.csv" file located in the dataframes folder.
+View the interactive dashboard on Heroku [here](https://spotify-streaming-dashboard.herokuapp.com/). 
 
-### Objective
-The main objective of this project, tackled in the first part of the dashboard, is to visually explore your mood is reflected in your music streaming habits over the course of a year. 
-- From Spotify's persepctive, this would be valuable information that could help provide better song/playlist reccommendations by being able to predict the user's mood based on the month/day/hour/etc. 
-- From an advertising perspective, the insights could help the advertiser choose more receptive ads by predicting the user's mood. 
-- From a personal persepctive, it could serve as informative insights that could compliment the annual Spotify Wrapped. Since I am interested in seeing different information represented in my Spotify Wrapped, the goal of the second part of the dashboard is to provide a visual to represent your mood through music for the year, as well as a visual to represent how much you appreciate your top artist for the year. 
+### About This Project 
+My goal for this project was to produce an interactive dashboard using my personal streaming history data from Spotify from the past year. There are three objectives that I had in mind: 
+1. How is my mood reflected in my streaming habits and are there any trends within my streaming habits in relation to the music's audio features?
+1. How can I create a personalized visualization of my mood through music for the past year? 
+1. How much do I really love my top streamed artist of the year and how I can visualize it?
+
+***
+### Results
+**How is my mood reflected in my streaming habits and are there any trends within my streaming habits in relation to the music's audio features?**
+
+I mainly looked at the audio feature valence to analyze how my mood is reflected in the music I listen to. Spotify defines valence as musical positiveness conveyed by a track. Songs with high valence are supposedly happier, while songs with low valence are sadder. 
 ***
 ### Data Acquisition
 **Part 1 - Personal Data**<br>
