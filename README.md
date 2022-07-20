@@ -12,6 +12,14 @@ My goal for this project was to produce an interactive dashboard using my person
 **How is my mood reflected in my streaming habits and are there any trends within my streaming habits in relation to the music's audio features?**
 
 I mainly looked at the audio feature valence to analyze how my mood is reflected in the music I listen to. Spotify defines valence as musical positiveness conveyed by a track. Songs with high valence are supposedly happier, while songs with low valence are sadder. 
+
+Here's what I found:
+
+<img align="left" width="33%" src="https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/streaming_habits_month.png?raw=true">
+When grouping my streaming history by month, I found that I listened to the saddest music in January (valence = 0.36) and the happiest music in June (valence = 0.47). Not only were January and June the saddest and happiest months, respectively, but they were also my most streamed and least streamed months, respectively. In January I listened to 219 hours of music, whereas in June I only listened to 67 hours of music. In general, I found that I listened to sadder music in the Fall and early Winter and happier music in the summer, which could be a hint of some seasonal depression (all part of the fun of living in Canada).<br><br>
+<img align="right" width="33%" src="https://github.com/edwardjmoore/Spotify-Streaming-History-Dashboard/blob/main/images/streaming_habits_day.png?raw=true">
+When grouping my streaming habits by day of the week, I found that I listened to the saddest music on Mondays and Tuesdays and the happiest music on Fridays. Although there are trends in my streaming habits by day of the week, the variance between the different days is not as strong as the variance between different months. The valence of my streaming history grouped by month varied between 0.36 and 0.47, whereas the valence of my streaming history grouped by day of the week only varied between 0.39 and 0.42. This means that the month would be a stronger predictor of my mood than the day of the week. 
+
 ***
 ### Data Acquisition
 **Part 1 - Personal Data**<br>
